@@ -1,25 +1,31 @@
-# Django API Starter
+# 🚀 Django REST API Starter Kit
 
-A production-ready Django REST API template with JWT authentication and Swagger/ReDoc documentation.
+A production-ready backend template with Django, DRF, JWT Auth, Docker, and CI/CD.
 
 ## Features
-- JWT Authentication (register, login, token refresh)
-- REST API with sample Profile CRUD endpoints
-- Auto-generated Swagger/ReDoc API docs
-- PostgreSQL + Docker setup
-- Pytest for testing
 
-## Setup
-1. Clone the repo: `git clone <repo-url>`
-2. Install Docker and Python 3.11
-3. Copy `.env.example` to `.env` and update variables
-4. Run: `docker-compose -f docker/docker-compose.yml up`
-5. Access Swagger at `http://localhost:8000/swagger/`
+- 🔐 JWT Authentication (via SimpleJWT)
+- 🔁 CRUD API endpoints with DRF
+- 🔍 Filtering & Pagination
+- 📃 OpenAPI/Swagger Documentation
+- 🐳 Dockerized Setup (Django + PostgreSQL + Redis)
+- 🚀 Ready to Deploy to Render/Heroku
+- ✅ GitHub Actions for CI/CD
 
-## Endpoints
-- `POST /api/users/register/` - Register a user
-- `POST /api/users/login/` - Login and get tokens
-- `GET /api/profiles/` - List user profiles (authenticated)
+## Technologies
 
-## License
-MIT License
+- Django 4.x  
+- Django REST Framework  
+- PostgreSQL  
+- Redis (optional for caching)  
+- Docker + Docker Compose  
+- GitHub Actions  
+- drf-spectacular (for API docs)
+
+## Getting Started
+
+```bash
+git clone https://github.com/yourusername/drf-api-starter.git
+cd drf-api-starter
+cp .env.example .env
+docker-compose up --build
